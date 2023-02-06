@@ -24,6 +24,7 @@ body {
 
 .header-container {
     grid-area: h;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 .sidebar {
@@ -32,10 +33,10 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     padding-top: 3em;
     padding-left: 2em;
     gap: 2em;
+    box-shadow: rgba(0, 0, 0, 0.04) 2px 0px 5px;
 }
 
 .content-container {
@@ -49,6 +50,7 @@ body {
 
 .your-projects {
     grid-area: ccd;
+    
 }
 
 .announcements-container {
@@ -57,6 +59,13 @@ body {
 
 .trending-container {
     grid-area: trend;
+}
+
+.dashboard-header {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
 }
 
 .sidebar-link {
@@ -75,4 +84,83 @@ body {
     flex-direction: column;
     gap: 2em;
     padding: 0.5em;
+}
+
+.searchbar {
+    width: 700px;
+    height: 24px;
+    all: unset;
+    background-color: #e4dafc;
+    border-radius: 1em;
+    padding: 6px 24px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.project-icons {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.avatar-mini {
+    border-radius: 50em;
+    height: auto;
+    width: 4em;
+}
+
+.header-profile {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    padding-right: 2em;
+}
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 3em;
+    
+}
+
+.bottom-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4em 2em 3em;
+}
+
+.hi-content {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    /* padding: 0 0 1em 3em; */
+}
+
+.avatar {
+    border-radius: 50em;
+    height: auto;
+    width: 5em;
+}
+
+.hi-text {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border: none;
+    padding: 1em 2em;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background-color: #8b5cf6;
+    border-radius: 2em;
+    margin: 0 8px;
 }
