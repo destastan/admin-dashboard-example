@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto',sans-serif;
+}
+
+.grid-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: minmax(260px, 15%) 1fr;
+    grid-template-rows: max-content 1fr;
+    grid-template-areas:
+    "s h"
+    "s cc";
+}
+
+.header-container {
+    grid-area: h;
+}
+
+.sidebar {
+    grid-area: s;
+    background-color: #8b5cf6;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 3em;
+    padding-left: 2em;
+    gap: 2em;
+}
+
+.content-container {
+    grid-area: cc;
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    grid-template-areas:
+    "ccd ann"
+    "ccd trend";
+}
+
+.your-projects {
+    grid-area: ccd;
+}
+
+.announcements-container {
+    grid-area: ann;
+}
+
+.trending-container {
+    grid-area: trend;
+}
+
+.sidebar-link {
+    display: flex;
+    gap: 8px;
+    padding: 1em;
+}
+
+.s-list {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 0.5em;
+}
